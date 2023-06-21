@@ -170,8 +170,70 @@ a{
     }
 
     .cuadros {
-        width: 350px;
-        height: 450px;
+        width: 320px;
+        height: 400px;
+    }
+
+    .mapa {
+        justify-content: center;
+    }
+
+    .mapa>iframe {
+        object-fit: contain;
+        width: 425px;
+        height: 400px;
+    }
+  }
+
+  @media only screen and (max-width: 348px){
+
+    .ofertas{
+        margin-top: 20px;
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 50px;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .cuadros {
+        width: 320px;
+        height: 400px;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .barrainicial {
+        display: flex;
+        position:static;
+        width: 100%;
+        height: 47px;
+        width: 100vh;
+        background-color: #FEF37F;
+        margin-top: 10px;
+    }
+
+    .tituloinicial {
+        font-size: 18px;
+    }
+  }
+
+  @media only screen and (max-width: 290px){
+
+    .barrainicial {
+        display: flex;
+        position:static;
+        width: 100vh;
+        height: 47px;
+        background-color: #FEF37F;
+        margin-top: 10px;
+    }
+
+    .tituloinicial {
+        font-size: 15px;
     }
   }
 
