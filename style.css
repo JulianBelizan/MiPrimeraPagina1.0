@@ -1,0 +1,177 @@
+body {
+    background-color: #4265BE;
+    margin: 0;
+}
+
+/* TItulo */
+
+.barrainicial {
+    display: flex;
+    width: 100%;
+    height: 47px;
+    background-color: #FEF37F;
+    margin-top: 10px;
+}
+
+.tituloinicial {
+    font-size: 24px;
+    margin: auto;
+    padding: auto;
+    box-shadow: 5px;
+    color: #5666F8;
+    font-family: 'Knewave';
+    font-weight: '400';
+    word-wrap: 'break-word';
+    text-shadow: -1px -1px 1px #000000, 4px -1px 4px #000000, -1px 4px 4px #000000, 4px 4px 4px #000000;
+}
+
+/* TItulo */
+
+/* Donde Estamos */
+.donde{
+    display: flex;
+    margin: auto;
+    padding: auto;
+    margin-top: 10px;
+    width: 156px;
+    height: 45px;
+    background-color: #F8EE85;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+    border: 1px solid black;
+    border-radius: 8px;
+    justify-content: center;
+    text-align: center;
+}
+
+.link1 {
+    text-decoration: none;
+    color: #4352DA;
+    font-size: 19px;
+    font-family: 'Koulen';
+    font-weight: '400';
+    word-wrap: 'break-word';
+    margin: auto;
+}
+/* Donde Estamos */
+/*Ofertas Del Dia*/
+
+/*Titulo */
+main{
+    text-align: center;
+    margin-top: 10px;
+}
+.ofertasdeldia{
+    color: white;
+    font-size: 24px;
+    font-family: 'Koulen';
+    font-weight: '400';
+    text-decoration: underline;
+}
+/*Objetos*/
+.ofertas{
+    margin-top: 20px;
+    display: grid;
+    width: 100%;
+    height: 260px;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 50px;;
+}
+
+.cuadros{
+    position: relative;
+    margin: auto;
+    width: 209px;
+    height: 263px;
+    background-color: #3541AF;
+    box-shadow: 0px 0px 4px 4px rgba(254,243,127,0.25);
+    border: 1px solid black;
+    transition: transform 0.3s ease;
+}
+
+.cuadros>img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.cuadros:hover {
+    transform: scale(1.05);
+}
+
+.product-info {
+    /* Estilos para la información del producto */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 95%;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-family: 'Arimo';
+    font-size: 14px;
+    text-align: center;
+    transition: opacity 0.3s ease;
+  }
+/*Ofertas Del Dia*/
+/*Whatsapp*/
+.whatsapp{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    height: 50px;
+}
+.whatsapp>a>img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+/*Donde Estamos Web*/
+a{
+    text-decoration: none;
+    margin: auto;
+}
+/*Donde estamos web*/
+
+/*Media Queries*/
+
+@media only screen and (max-width: 840px) {
+
+    .barrainicial {
+        width: 100%;
+    }
+
+    .ofertas{
+        margin-top: 20px;
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 50px;;
+    }
+    .cuadros {
+        width: 250px;
+        height: 350px;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+
+    .barrainicial {
+        width: 100%;
+    }
+
+    .ofertas{
+        margin-top: 20px;
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 50px;
+    }
+
+    .cuadros {
+        width: 350px;
+        height: 450px;
+    }
+  }
+
